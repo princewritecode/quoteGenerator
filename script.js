@@ -34,19 +34,13 @@ const authorText = document.getElementById('author');
 const twitterButton = document.getElementById('twitter');
 const newQuoteButton = document.getElementById('quote-generation');
 const loader = document.getElementById('loader');
-
-
-
 let apiQuotes = [];
-
 function loading()
 {
     loader.hidden = false;
     quoteContainer.hidden = true;
 }
-
 //hide loading
-
 function complete()
 {
     quoteContainer.hidden = false;
@@ -99,8 +93,6 @@ async function getQuotes()
     }
 }
 //onload
-
-
 
 //** tweet quote */
 function tweetQuote()
